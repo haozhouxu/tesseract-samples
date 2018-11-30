@@ -99,23 +99,24 @@
     <Content Include="x86\libtesseract304.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Content\bootstrap-theme.css" />
-    <None Include="Content\bootstrap-theme.min.css" />
-    <None Include="Content\bootstrap.css" />
-    <None Include="Content\bootstrap.min.css" />
-    <None Include="Default.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <None Include="CustomProfile.pubxml" />
+    <Content Include="Default.aspx" />
     <None Include="FolderProfile.pubxml" />
-    <None Include="fonts\glyphicons-halflings-regular.eot" />
-    <None Include="fonts\glyphicons-halflings-regular.svg" />
-    <None Include="fonts\glyphicons-halflings-regular.ttf" />
-    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <None Include="packages.config" />
-    <None Include="Scripts\bootstrap.js" />
-    <None Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.9.1-vsdoc.js" />
-    <None Include="Scripts\jquery-1.9.1.js" />
-    <None Include="Scripts\jquery-1.9.1.min.js" />
-    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="tessdata\chi_sim.traineddata">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -131,8 +132,8 @@
     <None Include="tessdata\eng.cube.word-freq" />
     <None Include="tessdata\eng.tesseract_cube.nn" />
     <None Include="tessdata\eng.traineddata" />
-    <None Include="Tesseract.WebDemo.css" />
-    <None Include="Web.config" />
+    <Content Include="Tesseract.WebDemo.css" />
+    <Content Include="Web.config" />
     <Content Include="Global.asax" />
   </ItemGroup>
   <PropertyGroup>
