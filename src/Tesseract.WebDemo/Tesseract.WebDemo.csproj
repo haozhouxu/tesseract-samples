@@ -29,6 +29,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -103,6 +104,7 @@
     <None Include="Content\bootstrap.css" />
     <None Include="Content\bootstrap.min.css" />
     <None Include="Default.aspx" />
+    <None Include="FolderProfile.pubxml" />
     <None Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="fonts\glyphicons-halflings-regular.svg" />
     <None Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -114,6 +116,12 @@
     <None Include="Scripts\jquery-1.9.1.js" />
     <None Include="Scripts\jquery-1.9.1.min.js" />
     <None Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="tessdata\chi_sim.traineddata">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tessdata\chi_tra.traineddata">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="tessdata\eng.cube.bigrams" />
     <None Include="tessdata\eng.cube.fold" />
     <None Include="tessdata\eng.cube.lm" />

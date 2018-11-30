@@ -7,7 +7,8 @@ namespace Tesseract.ConsoleDemo
     {
         public static void Main(string[] args)
         {
-            var testImagePath = "./phototest.tif";
+            //var testImagePath = "./phototest.tif";
+            var testImagePath = "./test2.png";
             if (args.Length > 0)
             {
                 testImagePath = args[0];
@@ -15,7 +16,7 @@ namespace Tesseract.ConsoleDemo
 
             try
             {
-                using (var engine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default))
+                using (var engine = new TesseractEngine(@"./tessdata", "chi_sim", EngineMode.Default))
                 {
                     using (var img = Pix.LoadFromFile(testImagePath))
                     {
@@ -71,8 +72,8 @@ namespace Tesseract.ConsoleDemo
                 Console.WriteLine("Details: ");
                 Console.WriteLine(e.ToString());
             }
-            //Console.Write("Press any key to continue . . . ");
-            //Console.ReadKey(true);
+            Console.Write("Press any key to continue . . . ");
+            Console.ReadKey(true);
         }
     }
 }

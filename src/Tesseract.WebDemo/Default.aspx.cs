@@ -49,7 +49,7 @@ namespace Tesseract.WebDemo
             {
             	// for now just fail hard if there's any error however in a propper app I would expect a full demo.
             	
-                using (var engine = new TesseractEngine(Server.MapPath(@"~/tessdata"), "eng", EngineMode.Default))
+                using (var engine = new TesseractEngine(Server.MapPath(@"~/tessdata"), "chi_sim", EngineMode.Default))
                 {
                     // have to load Pix via a bitmap since Pix doesn't support loading a stream.
                     using (var image = new System.Drawing.Bitmap(imageFile.PostedFile.InputStream))
@@ -58,7 +58,7 @@ namespace Tesseract.WebDemo
                         {
                             using (var page = engine.Process(pix))
                             {
-                                meanConfidenceLabel.InnerText = String.Format("{0:P}", page.GetMeanConfidence());
+                                //meanConfidenceLabel.InnerText = String.Format("{0:P}", page.GetMeanConfidence());
                                 resultText.InnerText = page.GetText();
                             }
                         }
